@@ -27,6 +27,7 @@ Output:
 3.Data peminjam akan tersimpan pada list 
 ================== 
 '''
+fileku = open('data-pinjaman.txt','w')
 
 print('='*20)
 print('Data Peminjam PS Joni')
@@ -70,6 +71,10 @@ if data_user == 'Joni':
             break
 else:
     print('User tidak diketahui!!')
+
+fileku.write('Peminjam PS4 '+' '+str(data_ps4)+'\n')
+fileku.write('Peminjam PS3 '+' '+str(data_ps3))
+fileku.close()
 
 
 
